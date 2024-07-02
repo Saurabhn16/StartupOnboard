@@ -15,7 +15,7 @@ export const SocketContextProvider = ({ children }) => {
 
   useEffect(() => {
     if (authUser) {
-      const socket = io("/socket.io", {
+      const socket = io("/https://startuponboard.onrender.com", {
         query: {
           userId: authUser._id,
         },
